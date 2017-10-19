@@ -69,19 +69,6 @@ public class DepthFirstSearch {
 
     }
 
-    public static void main(String[] args) {
-        BinaryTree binaryTree = new BinaryTree();
-        binaryTree.add(11);
-        binaryTree.add(2);
-        binaryTree.add(0);
-        binaryTree.add(10);
-        binaryTree.add(5);
-        binaryTree.add(20);
-        binaryTree.add(12);
-        System.out.println(binaryTree);
-        depthFirstSearch(binaryTree);
-    }
-
     public static void depthFirstSearch(BinaryTree binaryTree){
         Stack stack = new Stack();
         stack.push(binaryTree.node);
@@ -112,6 +99,19 @@ public class DepthFirstSearch {
             return null;
         }
 
+    }
+    
+    public static void main(String[] args) {
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.add(11);
+        binaryTree.add(2);
+        binaryTree.add(0);
+        binaryTree.add(10);
+        binaryTree.add(5);
+        binaryTree.add(20);
+        binaryTree.add(12);
+        System.out.println(binaryTree);
+        depthFirstSearch(binaryTree);
     }
 
 }
